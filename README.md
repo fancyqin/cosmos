@@ -1,3 +1,5 @@
 # cosmos
 
 ## monorepo example
+
+pnpm

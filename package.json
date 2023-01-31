@@ -1,0 +1,15 @@
+{
+  "name": "cosmos",
+  "version": "1.0.0",
+  "description": "monorepo example",
+  "main": "index.js",
+  "scripts": {
+    "reactapp:dev": "pnpm --filter=react-spa-app run dev",
+    "reactapp:build": "pnpm --filter=react-spa-app run build",
+    "reactapp:start": "pnpm --filter=react-spa-app run start"
+  },
+  "keywords": [],
+  "author": "QF",
+  "license": "MIT",
+  "type": "module"
+}
