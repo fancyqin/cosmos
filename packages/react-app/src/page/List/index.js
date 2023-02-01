@@ -9,8 +9,8 @@ export default function(){
   const [loading,setLoading] = useState(true);
   let {id} = useParams();
   useEffect(()=>{
-    getStanding(id.replace('-','.')).then(result => {
-      setData(result.data);
+    getStanding(id).then(result => {
+      setData(result);
       setLoading(false);
     },err=> {
       console.error(err)
@@ -19,16 +19,15 @@ export default function(){
   return <Layout>
     <h1>{data?.name}</h1>
     {loading ? <Spin />: 
-    <ol>
-      {data?.standings?.map(item => {
+    <ul>
+      {data?.flickr_images?.map((item,index) => {
         return (
-          <li key={item?.id}>
-            <Image width={100} src={item?.team?.logos?.[0]?.href} alt={item?.team?.name} />
-            <h2>{item?.team.name}</h2>
+          <li key={index}>
+            <Image width={200} src={item} alt={data?.name} />
           </li>
         )
       })}
-    </ol>
+    </ul>
     }
   </Layout>
 }

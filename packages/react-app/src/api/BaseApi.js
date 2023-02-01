@@ -1,9 +1,9 @@
 import Api from './index.js';
 
 export function getListData(){
-  return Api.get('/leagues');
+  return Api.get('/rockets');
 }
 
 export function getStanding(id){
-  return Api.get(`/leagues/${id}/standings?season=2022&sort=asc`)
+  return Api.get(`/rockets/${id}`)
 }

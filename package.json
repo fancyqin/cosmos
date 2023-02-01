@@ -4,12 +4,16 @@
   "description": "monorepo example",
   "main": "index.js",
   "scripts": {
-    "reactapp:dev": "pnpm --filter=react-spa-app run dev",
-    "reactapp:build": "pnpm --filter=react-spa-app run build",
-    "reactapp:start": "pnpm --filter=react-spa-app run start"
+    "reactapp:dev": "pnpm -F react-app run dev",
+    "reactapp:build": "pnpm -F react-app run build",
+    "reactapp:start": "pnpm -F react-app run start"
   },
   "keywords": [],
   "author": "QF",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "engines": {
+    "node": ">=12",
+    "pnpm": ">=6"
+}
 }

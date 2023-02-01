@@ -10,26 +10,26 @@ export default function(){
   const [list,setListData] = useState([]);
   useEffect(()=>{
     getListData().then(result => {
-      setListData(result.data);
+      setListData(result);
     },err=> {
       console.error(err)
     })
   },[]);
   return <Layout>
-    <ol className="league-list">
+    <ul className="league-list">
       <Row gutter={16}>
         {list.map(item => {
           return (
-          <Col key={item?.id} span={6}>
+          <Col key={item?.id} span={4}>
             <li>
-              <Image width={100} src={item?.logos?.light} alt={item?.name} />
-              <Button type="primary"><Link to={`/list/${item?.id.replace('.','-')}`}>{item?.name}</Link></Button>
+              <Image width={100} src={item?.flickr_images[0]} alt={item?.name} />
+              <Button type="primary"><Link to={`/list/${item?.id}`}>{item?.name}</Link></Button>
             </li>
           </Col>
           )
         })}
       </Row>
-    </ol>
+    </ul>
     
   </Layout>
 }
