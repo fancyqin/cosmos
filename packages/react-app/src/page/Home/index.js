@@ -3,8 +3,9 @@ import {getListData} from '@/api/BaseApi';
 import { Link  } from "react-router-dom";
 import {Image,Row,Col,Button } from 'antd';
 import Layout from '@/components/Layout';
-
+import {format} from 'bussiness'
 import './home.less';
+import _ from 'lodash'
 
 export default function(){
   const [list,setListData] = useState([]);
@@ -16,6 +17,8 @@ export default function(){
     })
   },[]);
   return <Layout>
+
+    <h1>{format(new Date())}</h1>
     <ul className="league-list">
       <Row gutter={16}>
         {list.map(item => {
