@@ -12,13 +12,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
 
-  packages/business:
-    specifiers:
-      dayjs: ^1.11.7
-    dependencies:
-      dayjs: 1.11.7
-
-  packages/next-app:
+  applications/next-app:
     specifiers:
       '@next/font': 13.1.6
       '@types/node': 18.11.18
@@ -42,17 +36,17 @@ importers:
       react-dom: 18.2.0_react@18.2.0
       typescript: 4.9.5
 
-  packages/react-app:
+  applications/react-app:
     specifiers:
       '@babel/core': ^7.18.10
       '@babel/preset-env': ^7.18.10
       '@babel/preset-react': ^7.18.6
+      '@cosmos/business': workspace:*
       antd: ^4.22.4
       axios: ^0.27.2
       babel-loader: ^8.2.5
       babel-plugin-import: ^1.13.5
       babel-polyfill: ^6.26.0
-      bussiness: workspace:*
       clean-webpack-plugin: ^4.0.0
       core-js: 2.6.12
       css-loader: ^6.7.1
@@ -73,12 +67,12 @@ importers:
       '@babel/core': 7.20.12
       '@babel/preset-env': 7.20.2_@babel+core@7.20.12
       '@babel/preset-react': 7.18.6_@babel+core@7.20.12
+      '@cosmos/business': link:../../packages/business
       antd: 4.24.7_biqbaboplfbrettd7655fr4n2y
       axios: 0.27.2
       babel-loader: 8.3.0_la66t7xldg4uecmyawueag5wkm
       babel-plugin-import: 1.13.6
       babel-polyfill: 6.26.0
-      bussiness: link:../business
       clean-webpack-plugin: 4.0.0_webpack@5.75.0
       core-js: 2.6.12
       css-loader: 6.7.3_webpack@5.75.0
@@ -96,6 +90,12 @@ importers:
       less-loader: 11.1.0_less@4.1.3+webpack@5.75.0
       webpack-cli: 4.10.0_y7ttplitmkohdpgkllksfboxwa
       webpack-dev-server: 4.11.1_pda42hcaj7d62cr262fr632kue
+
+  packages/business:
+    specifiers:
+      dayjs: ^1.11.7
+    dependencies:
+      dayjs: 1.11.7
 
 packages:
 

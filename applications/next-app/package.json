@@ -1,5 +1,5 @@
 {
-  "name": "next-app",
+  "name": "@cosmos/next-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {

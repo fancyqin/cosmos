@@ -4,12 +4,12 @@
   "description": "monorepo example",
   "main": "index.js",
   "scripts": {
-    "reactapp:dev": "pnpm -F react-app run dev",
-    "reactapp:build": "pnpm -F react-app run build",
-    "reactapp:start": "pnpm -F react-app run start",
-    "nextapp:dev": "pnpm -F next-app run dev",
-    "nextapp:build": "pnpm -F next-app run build",
-    "nextapp:start": "pnpm -F next-app run start"
+    "reactapp:dev": "pnpm -F @cosmos/react-app run dev",
+    "reactapp:build": "pnpm -F @cosmos/react-app run build",
+    "reactapp:start": "pnpm -F @cosmos/react-app run start",
+    "nextapp:dev": "pnpm -F @cosmos/next-app run dev",
+    "nextapp:build": "pnpm -F @cosmos/next-app run build",
+    "nextapp:start": "pnpm -F @cosmos/next-app run start"
   },
   "keywords": [],
   "author": "QF",
