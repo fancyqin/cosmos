@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {getStanding} from '@/api/BaseApi';
-import {Image,Spin } from 'antd';
+import {Image,Spin } from '@cosmos/antd';
 import { useParams } from "react-router-dom";
 import Layout from '@/components/Layout';
 

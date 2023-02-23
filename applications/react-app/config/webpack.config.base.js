@@ -47,7 +47,7 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: '[folder]/[name].[hash:8].[ext]',
+            name: '[path]/[name].[hash:8].[ext]',
             outputPath: './static/assets'
           }
         }

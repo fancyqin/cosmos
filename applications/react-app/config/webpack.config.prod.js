@@ -6,6 +6,6 @@ module.exports = merge(baseConfig, {
   mode: 'production',
   plugins: [
     new CleanWebpackPlugin(),
-    // new BundleAnalyzerPlugin()
+    new BundleAnalyzerPlugin()
   ]
 })

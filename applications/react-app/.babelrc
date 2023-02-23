@@ -12,7 +12,7 @@
     ],
     "plugins": [
         ["import", {
-            "libraryName": "antd",
+            "libraryName": "@cosmos/antd",
             // "libraryDirectory": "es",
             "style":true
         }],

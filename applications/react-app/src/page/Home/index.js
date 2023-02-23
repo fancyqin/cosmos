@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {getListData} from '@/api/BaseApi';
 import { Link  } from "react-router-dom";
-import {Image,Row,Col,Button } from 'antd';
+import {Image,Row,Col,Button } from '@cosmos/antd';
 import Layout from '@/components/Layout';
 import {format} from '@cosmos/business'
 import './home.less';
